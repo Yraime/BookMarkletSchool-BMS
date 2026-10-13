@@ -13,7 +13,7 @@ jeux = menu('Jeux', [
 ], 1);
 
 video = menu('Vid\u00E9os Streaming', [
-	['\uD83C\uDFAC Senpai Stream', '#7e0404', w('Senpai Stream', 'https://senpai-stream.shop/', 800, 600)]
+	['\uD83C\uDFAC Senpai Stream', '#7e0404', w('Senpai Stream', 'https://senpai.wiki/', 800, 600)]
 ], 1);
 
 param = menu('Param\u00E8tres', [], 1);
