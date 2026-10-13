@@ -8,7 +8,6 @@ Une liste de bookmarklets rapides et pratiques pour automatiser des trucs ou mod
 
 *   **🔄 Mises à jour automatiques (Zero-Maintenance) :** Tu installes le bookmarklet une seule fois. Dès que le code est modifié sur GitHub, tu reçois la mise à jour instantanément sans rien réinstaller.
 *   **⚡ Anti-Cache intelligent :** Le loader intègre un système d'horodatage (`Date.now()`) qui force le navigateur à charger la version la plus récente du code, évitant les scripts obsolètes bloqués en cache.
-*   **📦 Injection modulaire multi-fichiers :** Capable de lire un fichier de configuration (`files.json`) pour télécharger, fusionner et exécuter plusieurs scripts JavaScript complexes à la volée.
 *   **🪶 Ultra léger :** Moins d'une ligne de code stockée dans ton navigateur. Zéro impact sur les performances ou la mémoire de ta machine par rapport à une extension classique.
 
 ---
