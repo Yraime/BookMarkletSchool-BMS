@@ -1,5 +1,5 @@
 javascript:(function () {
-	var b = 'https://raw.githubusercontent.com/USER/REPO/main/',
+	var b = 'https://raw.githubusercontent.com/Yraime/BookMarkletSchool-BMS/main/',
 		q = '?' + Date.now();
 
 	function g(f) {
