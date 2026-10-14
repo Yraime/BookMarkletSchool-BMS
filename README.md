@@ -40,5 +40,5 @@ Va sur le site de ton choix, et **clique simplement sur le favori** dans ta barr
 Copie cette ligne de code et colle-la dans le champ **URL** de ton favori :
 
 ```javascript
-javascript:(function(){var b='https://githubusercontent.com g(f){return fetch(b+f+q).then(function(r){if(!r.ok)throw new Error(r.status+' '+f);return r.text();});};g('files.json').then(function(t){return Promise.all(JSON.parse(t).map(g));}).then(function(a){(0,eval)('(function(){'+a.join('\n;\n')+'\n})()');}).catch(function(e){alert('Chargement impossible : '+e.message);});})();
+javascript:(function()%7Bjavascript%3A(function () %7B%0A%09var b %3D 'https%3A%2F%2Fraw.githubusercontent.com%2FYraime%2FBookMarkletSchool-BMS%2Fmain%2F'%2C%0A%09%09q %3D '%3F' %2B Date.now()%3B%0A%0A%09function g(f) %7B%0A%09%09return fetch(b %2B f %2B q).then(function (r) %7B%0A%09%09%09if (!r.ok) throw new Error(r.status %2B ' ' %2B f)%3B%0A%09%09%09return r.text()%3B%0A%09%09%7D)%3B%0A%09%7D%0A%0A%09g('files.json')%0A%09%09.then(function (t) %7B return Promise.all(JSON.parse(t).map(g))%3B %7D)%0A%09%09.then(function (a) %7B (0%2C eval)('(function()%7B' %2B a.join('%5Cn%3B%5Cn') %2B '%5Cn%7D)()')%3B %7D)%0A%09%09.catch(function (e) %7B alert('Chargement impossible %3A ' %2B e.message)%3B %7D)%3B%0A%7D)()%3B%7D)()%3B
 ```
