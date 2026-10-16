@@ -134,11 +134,45 @@ U.grid.addEventListener('click', function (e) {
 
 U.input.addEventListener('input', render);
 U.closeBtn.onclick = close;
-U.bg.onclick = close;
+
+/* ---------- Plein écran ---------- */
+var full = false;
+function setFull(on) {
+	full = on;
+	U.win.classList.toggle('full', on);
+	U.fsBtn.textContent = on ? '❐' : '⛶';
+	U.fsBtn.title = on ? 'Quitter le plein écran' : 'Plein écran';
+}
+U.fsBtn.onclick = function () { setFull(!full); };
+U.bar.addEventListener('dblclick', function (e) {
+	if (!e.target.closest('button')) setFull(!full);
+});
+
+/* ---------- Déplacement (souris + tactile) ---------- */
+var dragging = false, dx = 0, dy = 0;
+U.bar.addEventListener('pointerdown', function (e) {
+	if (full || e.button > 0 || e.target.closest('button')) return;
+	dragging = true;
+	dx = e.clientX - U.win.offsetLeft;
+	dy = e.clientY - U.win.offsetTop;
+	U.bar.setPointerCapture(e.pointerId);
+	U.bar.classList.add('drag');
+});
+U.bar.addEventListener('pointermove', function (e) {
+	if (!dragging) return;
+	var de = document.documentElement;
+	var x = Math.min(Math.max(e.clientX - dx, 80 - U.win.offsetWidth), de.clientWidth - 80);
+	var y = Math.min(Math.max(e.clientY - dy, 0), de.clientHeight - 40);
+	U.win.style.left = x + 'px';
+	U.win.style.top = y + 'px';
+});
+function stopDrag() { dragging = false; U.bar.classList.remove('drag'); }
+U.bar.addEventListener('pointerup', stopDrag);
+U.bar.addEventListener('pointercancel', stopDrag);
 
 function onKey(e) {
 	var k = e.key;
-	if (k === 'Escape') { e.stopPropagation(); close(); return; }
+	if (k === 'Escape') { e.stopPropagation(); if (full) setFull(false); else close(); return; }
 	if (k === 'Enter') {
 		var s = shown[sel > -1 ? sel : 0];
 		if (s) { e.preventDefault(); openSite(s); }
