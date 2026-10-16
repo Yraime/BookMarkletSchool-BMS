@@ -1,0 +1,10 @@
+{
+	"name": "Réseaux",
+	"icon": "💬",
+	"sites": [
+		{ "n": "Discord", "u": "https://discord.com/app", "i": "💬" },
+		{ "n": "Reddit", "u": "https://www.reddit.com", "i": "👽" },
+		{ "n": "X / Twitter", "u": "https://x.com", "i": "✖️" },
+		{ "n": "Instagram", "u": "https://www.instagram.com", "i": "📷" }
+	]
+}

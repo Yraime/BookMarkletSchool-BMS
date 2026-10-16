@@ -1,0 +1,12 @@
+{
+	"name": "Outils",
+	"icon": "🧰",
+	"sites": [
+		{ "n": "Google", "u": "https://www.google.com", "i": "🔍" },
+		{ "n": "Google Drive", "u": "https://drive.google.com", "i": "📁" },
+		{ "n": "Translate", "u": "https://translate.google.com", "i": "🌐" },
+		{ "n": "Desmos", "u": "https://www.desmos.com/scientific", "i": "🧮" },
+		{ "n": "ChatGPT", "u": "https://chatgpt.com", "i": "🤖" },
+		{ "n": "GitHub", "u": "https://github.com/Yraime/BookMarkletSchool-BMS", "i": "🐙" }
+	]
+}

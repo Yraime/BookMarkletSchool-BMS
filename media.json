@@ -1,0 +1,11 @@
+{
+	"name": "Vidéos & Musique",
+	"icon": "🎬",
+	"sites": [
+		{ "n": "YouTube", "u": "https://www.youtube.com", "i": "▶️" },
+		{ "n": "Twitch", "u": "https://www.twitch.tv", "i": "🟣" },
+		{ "n": "Spotify", "u": "https://open.spotify.com", "i": "🎧" },
+		{ "n": "SoundCloud", "u": "https://soundcloud.com", "i": "☁️" },
+		{ "n": "Deezer", "u": "https://www.deezer.com", "i": "🎵" }
+	]
+}

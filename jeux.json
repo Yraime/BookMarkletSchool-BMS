@@ -1,0 +1,13 @@
+{
+	"name": "Jeux",
+	"icon": "🎮",
+	"sites": [
+		{ "n": "Slope", "u": "https://slope-game.com", "i": "⛰️" },
+		{ "n": "2048", "u": "https://play2048.co", "i": "🔢" },
+		{ "n": "Krunker", "u": "https://krunker.io", "i": "🔫" },
+		{ "n": "Agar.io", "u": "https://agar.io", "i": "🟢" },
+		{ "n": "Slither.io", "u": "http://slither.io", "i": "🐍" },
+		{ "n": "Tetris", "u": "https://tetris.com/play-tetris", "i": "🧱" },
+		{ "n": "Wordle", "u": "https://www.nytimes.com/games/wordle/index.html", "i": "🔤" }
+	]
+}
